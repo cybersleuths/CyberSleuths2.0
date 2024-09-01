@@ -3,7 +3,6 @@ import resourcesData from "./data/resourcesData";
 import ResourceCard from "./components/ResourceCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import eNavbar from "./components/Navbar"; // Import the navbar component
 
 export default function Resource() {
   React.useEffect(() => {
