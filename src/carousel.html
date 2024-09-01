@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Carousel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* Prevent scrolling */
+    }
+    .swiper-container {
+      height: 100%;
+      width: 100%;
+      overflow: hidden; /* Prevent scrolling */
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure images cover the container without overflow */
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #fff;
+    }
+    .swiper-pagination-bullet {
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Add your local images here -->
+      <div class="swiper-slide"><img src="/img/Event/Encrypta/Encrypta1.jpg" alt="Image 1"></div>
+      <div class="swiper-slide"><img src="/img/Event/Encrypta/Encrypta2.jpg" alt="Image 2"></div>
+      <div class="swiper-slide"><img src="/img/Event/Encrypta/Encrypta3.jpg" alt="Image 3"></div>
+      <div class="swiper-slide"><img src="/img/Event/Encrypta/Encrypta4.jpg" alt="Image 4"></div>
+      <div class="swiper-slide"><img src="/img/Event/Encrypta/Encrypta5.png" alt="Image 5"></div>
+      <div class="swiper-slide"><img src="/img/Event/Encrypta/Encrypta6.png" alt="Image 6"></div>
+      <div class="swiper-slide"><img src="/img/Event/Encrypta/Encrypta7.png" alt="Image 7"></div>
+      <!-- Add more slides as needed -->
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,  // Only one slide is visible at a time
+      spaceBetween: 10,
+      loop: true,  // Loop the slides for continuous scrolling
+      lazy: true,  // Enable lazy loading for images
+      autoplay: {
+        delay: 3000,  // Set autoplay delay to 3 seconds
+        disableOnInteraction: false,  // Continue autoplay after user interaction
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

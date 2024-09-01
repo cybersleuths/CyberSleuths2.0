@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbar-link-mobile {
+    @apply text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium;
+  }
+  .navbar-link {
+    @apply text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium;
+  }
+}
+
+
+#padding{
+  padding-top: 50px;
+}
+
+
+#heading{
+  padding-top: 80px;
+}
+
+#heading_encrypta{
+  padding-bottom: 0px;
+}
+
