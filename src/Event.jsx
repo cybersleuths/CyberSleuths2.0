@@ -3,7 +3,7 @@ import EventCard from "./components/EventCard";
 import eventCard from "./data/eventCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ENavbar from "./components/Navbar"; // Import your custom navbar component
+import Navbar from "./components/NavBar"; 
 
 export default function Event() {
   React.useEffect(() => {
@@ -13,7 +13,7 @@ export default function Event() {
 
   return (
     <div>
-      <ENavbar /> {/* Include the navbar component */}
+      <Navbar /> {/* Include the navbar component */}
       <div className="bg-gradient-to-br from-red-700 via-black to-red-900 text-black pt-16">
         {/* Event Cards */}
         <section className="mx-auto mt-12 mb-50 max-w-7xl overflow-hidden px-4 sm:px-6 lg:px-4">

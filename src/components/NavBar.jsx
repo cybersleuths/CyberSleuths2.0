@@ -142,13 +142,6 @@ export default function NavBar() {
                   <RiTeamLine className="mx-1 text-lg" /> Teams
                 </a>
 
-                <a
-                  href="https://www.codechef.com/ratings/all?filterBy=Institution%3DBengal%20College%20of%20Engineering%20and%20Technology&order=asc&sortBy=global_rank"
-                  target="_blank"
-                  className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-                >
-                  <MdOutlineLeaderboard className="mx-1 text-lg" /> Leaderboard
-                </a>
 
                 <a
                   href="/resources"
