@@ -40,7 +40,7 @@ export default function Landing() {
               <h1
                 className="font-headline text-brand-light text-2xl font-semibold tracking-tight text-white sm:text-4xl lg:text-3xl xl:text-4xl"
               >
-                Cyber Sleuthss
+                Cyber Sleuths
               </h1>
               <p
                 className="mt-2 text-gray-300 sm:mt-4 sm:text-xl"
