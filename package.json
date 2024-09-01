@@ -1,10 +1,10 @@
 {
-  "homepage" : "https://cybersleuths.github.io/CyberSleuths2.0/",
+  "homepage": "https://cybersleuths.github.io/CyberSleuths2.0/",
   "name": "Cyber Sleuths-website",
   "version": "0.0.0",
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
@@ -21,7 +21,7 @@
     "react-lazy-load-image-component": "^1.5.4",
     "react-router-dom": "^5.3.0",
     "save": "^2.5.0",
-    "swiper": "^11.1.9"
+    "swiper": "^11.1.12"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.3.0",
