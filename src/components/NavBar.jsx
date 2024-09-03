@@ -3,7 +3,7 @@ import { Transition } from "@headlessui/react";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsCalendarEvent } from "react-icons/bs";
 import { RiTeamLine, RiBook2Line } from "react-icons/ri";
-import { MdOutlineLeaderboard } from "react-icons/md";
+import { FaHandshake } from "react-icons/fa";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +21,7 @@ export default function NavBar() {
                     src="/img/logo.png"
                     alt="CYBER SLEUTHS"
                   />
-                  <h1 className="font-semibold text-white">
-                    Cyber Sleuths
-                  </h1>
+                  <h1 className="font-semibold text-white">Cyber Sleuths</h1>
                 </div>
               </a>
 
@@ -56,6 +54,13 @@ export default function NavBar() {
                       className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
                     >
                       <RiBook2Line className="mx-1 text-lg" /> Resources
+                    </a>
+
+                    <a
+                      href="/cyber-sleuths-x-isoeh"
+                      className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
+                    >
+                      <FaHandshake className="mx-1 text-lg" /> Cyber Sleuths X ISOEH
                     </a>
                   </div>
                 </div>
@@ -118,40 +123,44 @@ export default function NavBar() {
           leaveTo="opacity-0 scale-95"
         >
           {/* Mobile menu */}
-          {ref => (
-            <div className="md:hidden" id="mobile-menu">
-              <div ref={ref} className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-                <a
-                  href="/"
-                  className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-                >
-                  <AiOutlineHome className="mx-1 text-lg" /> Home
-                </a>
+          <div className="md:hidden" id="mobile-menu">
+            <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+              <a
+                href="/"
+                className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
+              >
+                <AiOutlineHome className="mx-1 text-lg" /> Home
+              </a>
 
-                <a
-                  href="/events"
-                  className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-                >
-                  <BsCalendarEvent className="mx-1 text-lg" /> Events
-                </a>
+              <a
+                href="/events"
+                className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
+              >
+                <BsCalendarEvent className="mx-1 text-lg" /> Events
+              </a>
 
-                <a
-                  href="/teams"
-                  className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-                >
-                  <RiTeamLine className="mx-1 text-lg" /> Teams
-                </a>
+              <a
+                href="/teams"
+                className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
+              >
+                <RiTeamLine className="mx-1 text-lg" /> Teams
+              </a>
 
+              <a
+                href="/resources"
+                className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
+              >
+                <RiBook2Line className="mx-1 text-lg" /> Resources
+              </a>
 
-                <a
-                  href="/resources"
-                  className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-                >
-                  <RiBook2Line className="mx-1 text-lg" /> Resources
-                </a>
-              </div>
+              <a
+                href="/cyber-sleuths-x-isoeh"
+                className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
+              >
+                <FaHandshake className="mx-1 text-lg" /> Cyber Sleuths X ISOEH
+              </a>
             </div>
-          )}
+          </div>
         </Transition>
       </nav>
     </div>
