@@ -5,6 +5,8 @@ import Home from "./Home";
 import Resource from "./Resource";
 import Event from "./Event";
 import Teams from "./Teams";
+import CyberSleuthsXISOEH from "./cybersleuthsxisoeh";
+
 import {
   BrowserRouter,
   Switch,
@@ -25,6 +27,7 @@ export default function App() {
           <Route path="/eventdetails" component={EventDetails} />
           <Route path="/teams" component={Teams} />
           <Route path="/Encrypta" component={Encrypta} />
+          <Route path="/cybersleuthsxisoeh" component={CyberSleuthsXISOEH} />
         </Switch>
         <Foot /> 
       </div>
