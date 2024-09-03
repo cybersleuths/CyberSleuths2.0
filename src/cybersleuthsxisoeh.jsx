@@ -18,23 +18,23 @@ export default function CyberSleuthsXISOEH() {
 
   return (
     <div className="bg-gradient-to-br from-red-700 via-black to-red-900 text-white min-h-screen mb-50">
-      <div className="xl:pr-36 md:px-3 px-6 pt-8 pb-0">
-        <div id="heading" className="flex items-center justify-between">
-          <h1 id="heading_mou" className="font-bold text-4xl md:text-5xl text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-0 ">
+        <div className="flex flex-col items-start gap-6">
+          <h1 className="font-bold text-4xl md:text-5xl text-white">
             Cyber Sleuths X ISOEH
           </h1>
         </div>
       </div>
-      
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mt-12 mb-50 overflow-hidden space-y-12 text-xl">
-        {/* Event Details Section */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 flex flex-col lg:flex-row items-center gap-8 pb-20">
-          <div className="flex-1 pb-10">
-            <p className="text-lg text-white leading-relaxed"> 
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 mb-50 overflow-hidden text-xl">
+        <div className="flex flex-col lg:flex-row items-start gap-8 pb-20">
+          <div className="flex-1">
+            <p className="text-lg text-white leading-relaxed mb-6"> 
               On 10th January 2023, Cyber Sleuths proudly signed a Memorandum of Understanding (MOU) with ISOAH to foster collaboration in 
               cybersecurity education and training. This partnership aims to bridge the gap between academia and industry, offering 
               students access to exclusive resources, training programs, and expert guidance from industry professionals.
             </p>
+    
             <div className="pt-6">
               <a
                 href="/PDF/MOU - ISOAH Data Securities Pvt. Ltd..pdf"
@@ -46,15 +46,14 @@ export default function CyberSleuthsXISOEH() {
               </a>
             </div>
 
-              <div className="pt-6">
-    <a
-      href="/courses"  
-      className="text-blue-500 underline text-lg"
-    >
-      View Courses Offered Under This MOU
-    </a>
-  </div>
-            
+            <div className="pt-6">
+              <a
+                href="/courses"
+                className="text-blue-500 underline text-lg"
+              >
+                View Courses Offered Under This MOU
+              </a>
+            </div>
           </div>
           
           {/* Image Gallery Section */}
