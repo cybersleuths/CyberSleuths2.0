@@ -1,6 +1,6 @@
 # Cyber Sleuths - Cybersecurity Club Website
 
-![Cyber Sleuths](https://your-image-url.com/banner.png) 
+![Cyber Sleuths](./banner.png) 
 
 Welcome to the **Cyber Sleuths** GitHub repository! This is the official website for the ethical hacking club of **Dr. B. C. Roy Engineering College**, located within the CSE department. We're dedicated to fostering a community of cybersecurity enthusiasts who are passionate about ethical hacking, digital forensics, and securing the digital world.
 
