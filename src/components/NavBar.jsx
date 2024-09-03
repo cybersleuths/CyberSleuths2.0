@@ -57,7 +57,7 @@ export default function NavBar() {
                     </a>
 
                     <a
-                      href="/cyber-sleuths-x-isoeh"
+                      href="/cybersleuthsxisoeh"
                       className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
                     >
                       <FaHandshake className="mx-1 text-lg" /> Cyber Sleuths X ISOEH
@@ -154,7 +154,7 @@ export default function NavBar() {
               </a>
 
               <a
-                href="/cyber-sleuths-x-isoeh"
+                href="/cybersleuthsxisoeh"
                 className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
               >
                 <FaHandshake className="mx-1 text-lg" /> Cyber Sleuths X ISOEH
