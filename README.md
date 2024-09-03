@@ -21,8 +21,8 @@ Check out the live website: [Cyber Sleuths Website](https://www.cybersleuths.co.
 - **Frontend:** React.js, JavaScript, HTML, CSS
 - **Styling:** Tailwind CSS, Custom Gradients
 - **Animations:** Framer Motion for smooth, modern animations
-- **Backend:** Firebase (for database and authentication)
-- **Hosting:** Netlify/GitHub Pages (depending on your choice)
+- **Backend:** Node.Js & MongoDb(for authentication and database )
+- **Hosting:** Netlify
 
 ## 📝 How to Contribute
 
