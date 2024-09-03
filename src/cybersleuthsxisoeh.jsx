@@ -31,7 +31,7 @@ export default function CyberSleuthsXISOEH() {
           <div className="flex-1">
             <p className="text-lg text-white leading-relaxed mb-6"> 
               On 10th January 2023, Cyber Sleuths proudly signed a Memorandum of Understanding (MOU) with ISOAH to foster collaboration in 
-              cybersecurity education and training. This partnership aims to bridge the gap between academics and industry, offering 
+              cybersecurity education and training. This partnership aim to bridge the gap between academics and industry, offering 
               students access to exclusive resources, training programs, and expert guidance from industry professionals.
             </p>
     
