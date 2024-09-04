@@ -36,6 +36,15 @@ export default [
       twitter: "",
       github: ""
     },
-    
+  
+    {
+      imageUrl: "",
+      name: "Debrik Chakroborty",
+      designation: "Joint-Treasurer",
+      instagram: "",
+      linkedin: "",
+      twitter: "",
+      github: ""
+    },
   ];
   
