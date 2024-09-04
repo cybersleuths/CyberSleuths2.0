@@ -25,13 +25,14 @@ export default function CyberSleuthsXISOEH() {
           </h1>
         </div>
       </div>
-
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 mb-50 overflow-hidden text-xl">
-        <div className="flex flex-col lg:flex-row items-start gap-8 pb-20">
-          <div className="flex-1">
-            <p className="text-lg text-white leading-relaxed mb-6"> 
+      
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mt-12 mb-50 overflow-hidden space-y-12 text-xl">
+        {/* Event Details Section */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 flex flex-col lg:flex-row items-center gap-8 pb-20">
+          <div className="flex-1 pb-10">
+            <p className="text-lg text-white leading-relaxed"> 
               On 10th January 2023, Cyber Sleuths proudly signed a Memorandum of Understanding (MOU) with ISOAH to foster collaboration in 
-              cybersecurity education and training. This partnership aim to bridge the gap between academics and industry, offering 
+              cybersecurity education and training. This partnership aims to bridge the gap between academia and industry, offering 
               students access to exclusive resources, training programs, and expert guidance from industry professionals.
             </p>
     

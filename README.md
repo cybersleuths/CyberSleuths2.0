@@ -29,7 +29,7 @@ Check out the live website: [Cyber Sleuths Website](https://www.cybersleuths.co.
 We welcome contributions from all skill levels! Here's how you can get involved:
 
 1. **Fork the repository**: Click the "Fork" button at the top right of this page.
-2. **Clone your fork**: `git clone https://github.com/your-username/cyber-sleuths.git`
+2. **Clone your fork**: `git clone https://github.com/cybersleuths/CyberSleuths2.0.git`
 3. **Create a new branch**: `git checkout -b feature-name`
 4. **Make your changes** and commit them: `git commit -m 'Add new feature'`
 5. **Push to the branch**: `git push origin feature-name`
@@ -37,18 +37,14 @@ We welcome contributions from all skill levels! Here's how you can get involved:
 
 ## 🤝 Code of Conduct
 
-We follow a strict Code of Conduct to ensure that our community remains welcoming and inclusive. Please read our [Code of Conduct](https://your-coc-url.com) before contributing.
+We follow a strict Code of Conduct to ensure that our community remains welcoming and inclusive.
 
 ## 📧 Contact Us
 
 For any inquiries, suggestions, or feedback, feel free to reach out:
 
-- **Email:** cyber.sleuths@college.edu
+- **Email:** info.cybersleuths@bcrec.ac.in
 - **GitHub Issues:** Use the issues tab for any bugs or feature requests
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
