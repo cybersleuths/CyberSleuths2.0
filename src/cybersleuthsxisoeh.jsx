@@ -4,6 +4,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import coursesData from "./data/coursesData";  // Import the courses data
 
 export default function CyberSleuthsXISOEH() {
   const [showIframe, setShowIframe] = useState(false);
@@ -28,7 +29,7 @@ export default function CyberSleuthsXISOEH() {
       
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mt-12 mb-50 overflow-hidden space-y-12 text-xl">
         {/* Event Details Section */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 flex flex-col lg:flex-row items-center gap-8 pb-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 flex flex-col lg:flex-row items-center gap-8 pb-0">
           <div className="flex-1 pb-10">
             <p className="text-lg text-white leading-relaxed"> 
               On 10th January 2023, Cyber Sleuths proudly signed a Memorandum of Understanding (MOU) with ISOAH to foster collaboration in 
@@ -44,15 +45,6 @@ export default function CyberSleuthsXISOEH() {
                 className="text-blue-500 underline text-lg"
               >
                 View the full MOU (PDF)
-              </a>
-            </div>
-
-            <div className="pt-6">
-              <a
-                href="/courses"
-                className="text-blue-500 underline text-lg"
-              >
-                View Courses Offered Under This MOU
               </a>
             </div>
           </div>
@@ -75,6 +67,30 @@ export default function CyberSleuthsXISOEH() {
                 View More
               </button>
             )}
+          </div>
+        </div>
+
+        {/* Courses Section */}
+        <div className="mt-12">
+          <h2 className="text-3xl font-bold text-center text-white mb-8">Courses Offered under this MOU</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {coursesData.map((course, index) => (
+              <div key={index} className="bg-gray-800 rounded-lg shadow-lg p-6">
+                <img
+                  src={course.imageUrl}
+                  alt={course.imageAlt}
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+                <h3 className="text-xl font-semibold text-red-500 mt-4">{course.title}</h3>
+                <p className="text-white mt-2">{course.description}</p>
+                <a
+                  href={course.link}
+                  className="text-blue-500 underline mt-4 block hover:text-blue-300"
+                >
+                  {course.button}
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </section>
