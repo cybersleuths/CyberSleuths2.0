@@ -20,7 +20,7 @@ export default function Event() {
           <article className="col-auto mb-10">
             <div data-aos="fade-up" data-aos-duration="1000" className="mb-20">
               <h1 className="title-font mb-20 mt-0 text-center text-2xl font-medium text-gray-100 sm:text-3xl">  
-                Upcoming Event & Workshops
+                Upcoming Event & Workshopssdfgbhnbvfdsasdfvb
               </h1>
               {/* Banner */}
               <div className="flex flex-col rounded-lg bg-gray-800 xl:flex-row shadow-xl">
