@@ -51,7 +51,7 @@ export default function Landing() {
               <div className="mt-6">
                 <a
                   className="focus:outline-none inline-block transform rounded-lg bg-red-600 px-5 py-3 text-sm font-semibold uppercase tracking-wider text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-red-600 focus:ring focus:ring-red-700 focus:ring-opacity-50 focus:ring-offset-2 active:bg-red-700 sm:text-base"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfSr8DHutz5u2OVajr4Qysl8ZzeNBSNF8rnh0TAlVgU2yNltQ/viewform"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
