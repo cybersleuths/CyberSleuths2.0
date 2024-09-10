@@ -1,7 +1,7 @@
 export default [
     {
         imageUrl: "",  
-        imageAlt: "Course 12222",
+        imageAlt: "",
         title: "Course 15353434 Title",
         description: "This course covers the basics of cybersecurity.",
         link: "/course1"  
