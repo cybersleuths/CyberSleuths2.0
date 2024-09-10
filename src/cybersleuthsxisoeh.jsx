@@ -73,7 +73,7 @@ export default function CyberSleuthsXISOEH() {
         {/* Courses Section */}
         <div className="mt-12">
           <h2 className="text-3xl font-bold text-center text-white mb-8">Courses Offered under this MOU</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 " style={{ marginBottom: '100px' }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {coursesData.map((course, index) => (
               <div key={index} className="bg-gray-800 rounded-lg shadow-lg p-6">
                 <img
