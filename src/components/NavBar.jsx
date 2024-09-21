@@ -7,10 +7,23 @@ import { FaHandshake } from "react-icons/fa";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if(window.scrollY>=50){
+      setNavbar(true);
+    }else{
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener('scroll', changeBackground);
+  const navscrolled="fixed top-0 left-0 w-full duration-1000 bg-gradient-to-t from-red-700 to-red-900 shadow-lg shadow-black-700/50 z-50";
+  const navtop="fixed top-0 left-0 w-full duration-1000 bg-transparent shadow-none z-50";
 
   return (
     <div>
-      <nav className="fixed top-0 left-0 w-full bg-transparent shadow-none z-50">
+      <nav className={navbar?navscrolled:navtop}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex flex-grow justify-between">

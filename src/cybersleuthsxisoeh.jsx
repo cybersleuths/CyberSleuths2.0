@@ -4,9 +4,17 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import coursesData from "./data/coursesData";  // Import the courses data
 
 export default function CyberSleuthsXISOEH() {
+
+  React.useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   const [showIframe, setShowIframe] = useState(false);
 
   const images = [
@@ -19,7 +27,7 @@ export default function CyberSleuthsXISOEH() {
 
   return (
     <div className="bg-gradient-to-br from-red-700 via-black to-red-900 text-white min-h-screen mb-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-0 ">
+      <div data-aos="fade-up" data-aos-duration="1000" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-0 ">
         <div className="flex flex-col items-start gap-6">
           <h1 className="font-bold text-4xl md:text-5xl text-white">
             Cyber Sleuths X ISOEH
@@ -29,7 +37,7 @@ export default function CyberSleuthsXISOEH() {
       
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mt-12 mb-50 overflow-hidden space-y-12 text-xl">
         {/* Event Details Section */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 flex flex-col lg:flex-row items-center gap-8 pb-0">
+        <div data-aos="fade-up" data-aos-duration="1000" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 flex flex-col lg:flex-row items-center gap-8 pb-0">
           <div className="flex-1 pb-10">
             <p className="text-lg text-white leading-relaxed"> 
               On 10th January 2023, Cyber Sleuths proudly signed a Memorandum of Understanding (MOU) with ISOAH to foster collaboration in 
@@ -71,9 +79,9 @@ export default function CyberSleuthsXISOEH() {
         </div>
 
         {/* Courses Section */}
-        <div className="mt-12">
-          <h2 className="text-3xl font-bold text-center text-white mb-8">Courses Offered under this MOU</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mt-12 pb-12">
+          <h2 data-aos="fade-up" data-aos-duration="1000" className="text-3xl font-bold text-center text-white mb-8">Courses Offered under this MOU</h2>
+          <div data-aos="fade-up" data-aos-duration="1000" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {coursesData.map((course, index) => (
               <div key={index} className="bg-gray-800 rounded-lg shadow-lg p-6">
                 <img
