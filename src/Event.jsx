@@ -31,10 +31,10 @@ export default function Event() {
                 />
                 <div className="p-10 xl:p-16">
                   <div className="mb-8">
-                    <h1 className="mb-4 w-full text-2xl font-semibold">
+                    <h1 className="mb-4 w-full text-2xl text-gray-100 font-semibold">
                     ENCRYPTA <span className="text-red-500">2.0</span>
                     </h1>
-                    <p>
+                    <p className="text-gray-100">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis dolor sem, vulputate dictum nisi venenatis eu.
                     </p>
                   </div>
