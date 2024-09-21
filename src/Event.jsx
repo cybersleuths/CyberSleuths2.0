@@ -20,7 +20,7 @@ export default function Event() {
           <article className="col-auto mb-10">
             <div data-aos="fade-up" data-aos-duration="1000" className="mb-20">
               <h1 className="title-font mb-20 mt-0 text-center text-2xl font-medium text-gray-100 sm:text-3xl">  
-                Upcoming Event & Workshopssdfgbhnbvfdsasdfvb
+                Upcoming Event & Workshops
               </h1>
               {/* Banner */}
               <div className="flex flex-col rounded-lg bg-gray-800 xl:flex-row shadow-xl">
@@ -31,10 +31,10 @@ export default function Event() {
                 />
                 <div className="p-10 xl:p-16">
                   <div className="mb-8">
-                    <h1 className="mb-4 w-full text-2xl font-semibold">
+                    <h1 className="mb-4 w-full text-2xl text-gray-100 font-semibold">
                     ENCRYPTA <span className="text-red-500">2.0</span>
                     </h1>
-                    <p>
+                    <p className="text-gray-100">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis dolor sem, vulputate dictum nisi venenatis eu.
                     </p>
                   </div>
