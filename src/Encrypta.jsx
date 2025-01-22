@@ -58,11 +58,12 @@ export default function Encrypta() {
 
   const visibleImagesCount = 4;
 
+
   return (
     <div className="bg-gradient-to-br from-red-700 via-black to-red-900 text-white min-h-screen mb-50">
       <div className="xl:pr-36 md:px-3 px-6 pt-8 pb-0">
         <div id="heading" className="flex items-center justify-between">
-          <h1 id="heading_encrypta" className="font-bold text-4xl md:text-5xl text-white">
+          <h1 id="heading_encrypta" className="font-bold text-4xl md:text-5xl text-white ml-80">
             ENCRYPTA
           </h1>
         </div>

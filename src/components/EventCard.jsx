@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function EventCard({ events }) {
   return (
     <div data-aos="fade-up" data-aos-duration="1000">
+      {/* Mobile View */}
       <div className="group relative mb-auto mt-auto flex h-auto w-auto transform overflow-hidden rounded-lg bg-white shadow-xl transition duration-500 ease-in-out hover:scale-105 sm:hidden">
         <div className="relative ">
           <img
@@ -41,13 +43,12 @@ export default function EventCard({ events }) {
               </tr>
             </table>
           </div>
-          <a
-            href={events.href}
+          <Link
+            to={events.href}
             className=" float-right m-2 mb-5 mr-3 w-32 rounded-full bg-red-600 p-2 pl-4 text-center font-semibold text-white shadow-lg transition-all duration-300 hover:bg-red-700 hover:shadow-none focus:outline-none focus:ring"
           >
-            {" "}
             {events.button}
-          </a>
+          </Link>
         </div>
       </div>
       {/* Desktop View */}
@@ -89,13 +90,12 @@ export default function EventCard({ events }) {
               </tr>
             </table>
           </div>
-          <a
-            href={events.href}
+          <Link
+            to={events.href}
             className=" float-right m-2 mb-5 mr-3 w-32 rounded-full bg-red-600 p-2 pl-4 text-center font-semibold text-white shadow-lg transition-all duration-300 hover:bg-red-700 hover:shadow-none focus:outline-none focus:ring"
           >
-            {" "}
             {events.button}
-          </a>
+          </Link>
         </div>
       </div>
     </div>
