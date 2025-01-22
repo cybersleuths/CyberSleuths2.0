@@ -65,7 +65,7 @@ export default function Teams() {
             data-aos-duration="1000"
             className="title-font mb-20 text-center text-2xl font-medium text-white sm:text-3xl"
           >
-            Other Teams
+            Website & Content Ceation
           </h1>
           <section className="flex flex-wrap justify-center gap-5">
             {OtherTeams.map(teams1 => (

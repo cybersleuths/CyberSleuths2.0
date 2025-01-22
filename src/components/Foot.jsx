@@ -9,7 +9,7 @@ export default function Foot() {
             <div className="flex gap-4 items-center">
               <img
                 className="h-8 w-8"
-                src="/img/logo.jpg"
+                src="/img/logo.png"
                 alt="cyber Sleuths"
               />
               <h1 className="text-white font-bold text-xl">Cyber Sleuths</h1>
@@ -64,6 +64,9 @@ export default function Foot() {
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-white font-semibold py-1">Copyright © Cyber Sleuths <span id="get-current-year">2023</span></div>
           </div>
+          <div className="text-sm text-white font-semibold py-1">
+               Made with ❤️ | Cyber Sleuths Team
+            </div>
         </div>
       </div>
     </footer>
