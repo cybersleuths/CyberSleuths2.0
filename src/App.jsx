@@ -18,7 +18,7 @@ import {
 } from "react-router-dom"
 import EventDetails from "./EventDetails";
 import Encrypta from "./Encrypta";
-import ByteBounty from "./Bytebounty";
+{/*import ByteBounty from "./Bytebounty";*/}
 import Cygnal from "./Cygnal";
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
           <Route path="/eventdetails" component={EventDetails} />
           <Route path="/teams" component={Teams} />
           <Route path="/Encrypta" component={Encrypta} />
-          <Route path="/bytebounty" component={ByteBounty} />
+          {/*<Route path="/bytebounty" component={ByteBounty} />*/}
           <Route path="/cygnal" component={Cygnal} />
           <Route path="/cybersleuthsxisoeh" component={CyberSleuthsXISOEH} />
           <Route path="/faq" component={Faq} /> {/* Add Faq route */}
