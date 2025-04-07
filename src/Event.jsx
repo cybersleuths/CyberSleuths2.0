@@ -26,7 +26,7 @@ export default function Event() {
               <div className="flex flex-col rounded-lg bg-gray-800 xl:flex-row shadow-xl">
                 <img
                   className="w-auto rounded-t-lg xl:h-96 xl:rounded-l-lg xl:rounded-t-none"
-                  src="/img/ByteBounty.jpg"
+                  src="/img/comingsoon.png"
                   alt="banner"
                 />
                 <div className="p-10 xl:p-16">
@@ -35,7 +35,16 @@ export default function Event() {
                     ENCRYPTA <span className="text-red-500">2.0</span>
                     </h1>
                     <p className="text-gray-100">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis dolor sem, vulputate dictum nisi venenatis eu.
+                    Join us for Encrypta 2.0, a thrilling cyber security event hosted by the Cyber Security Club. Test your skills and compete with the best!
+                    </p>
+                    <p className="text-gray-400 mt-4">
+                      <strong>Date:</strong> XX/XX/2025
+                    </p>
+                    <p className="text-gray-400">
+                      <strong>Time:</strong> Will be notified soon
+                    </p>
+                    <p className="text-gray-400">
+                      <strong>Location:</strong> Will be notified soon
                     </p>
                   </div>
                   <div>
