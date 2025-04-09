@@ -1,6 +1,6 @@
 export default [
     {
-      imageUrl: "",
+      imageUrl: "./img/corememb/Mukulika.jpg",
       name: "Mukulika Chatterjee",
       designation: "President",
       instagram: "",
@@ -38,13 +38,13 @@ export default [
       github: ""
     },
     {
-      imageUrl: "",
+      imageUrl: "./img/corememb/Debrik.jpg",
       name: "Debrik Chakroborty",
       designation: "Joint-Treasurer",
-      instagram: "",
-      linkedin: "",
-      twitter: "",
-      github: ""
+      instagram: "https://www.instagram.com/idebrikchakraborty/",
+      linkedin: "https://www.linkedin.com/in/debrik-chakraborty-aa5293231/",
+      twitter: "https://x.com/Debrik1",
+      github: "https://github.com/Thebrik"
     },
   
     {
@@ -56,14 +56,36 @@ export default [
       twitter: "",
       github: ""
     },
+
     {
-      imageUrl: "",
-      name: "Abinash Kumar",
-      designation: "Chief Event Coordinator",
+      imageUrl: "./img/corememb/Ananya.jpg",
+      name: "Ananya Banerjee ",
+      designation: "Coordinator",
       instagram: "",
       linkedin: "",
       twitter: "",
       github: ""
     },
+
+    {
+      imageUrl: "./img/corememb/Abinash.jpg",
+      name: "Abinash Kumar",
+      designation: "Chief Event Coordinator",
+      instagram: "https://www.instagram.com/abinashjha91?igsh=MWI1aDlwZ2U3aGpxdQ==",
+      linkedin: "https://www.linkedin.com/feed/",
+      twitter: "https://x.com/?lang=en",
+      github: "https://github.com/Abinash456"
+    },
+
+    {
+      imageUrl: "./img/corememb/Disha.jpg",
+      name: "Disha Bhattacharya",
+      designation: "Coordinator",
+      instagram: "",
+      linkedin: "",
+      twitter: "",
+      github: ""
+    },
+
   ];
   

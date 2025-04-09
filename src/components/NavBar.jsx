@@ -4,123 +4,122 @@ import { AiOutlineHome } from "react-icons/ai";
 import { BsCalendarEvent } from "react-icons/bs";
 import { RiTeamLine, RiBook2Line } from "react-icons/ri";
 import { FaHandshake } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    if(window.scrollY>=50){
+    if (window.scrollY >= 50) {
       setNavbar(true);
-    }else{
+    } else {
       setNavbar(false);
     }
   };
 
   window.addEventListener('scroll', changeBackground);
-  const navscrolled="fixed top-0 left-0 w-full duration-1000 bg-gradient-to-t from-red-700 to-red-900 shadow-lg shadow-black-700/50 z-50";
-  const navtop="fixed top-0 left-0 w-full duration-1000 bg-transparent shadow-none z-50";
+  const navscrolled = "fixed top-0 left-0 w-full duration-1000 bg-gradient-to-t from-red-700 to-red-900 shadow-lg shadow-black-700/50 z-50";
+  const navtop = "fixed top-0 left-0 w-full duration-1000 bg-transparent shadow-none z-50";
 
   return (
     <div>
-      <nav className={navbar?navscrolled:navtop}>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between">
-            <div className="flex flex-grow justify-between">
-              <a href="/">
-                <div className="flex items-center gap-4">
-                  <img
-                    className="h-8 w-8"
-                    src="/img/logo.png"
-                    alt="CYBER SLEUTHS"
-                  />
-                  <h1 className="font-semibold text-white">Cyber Sleuths</h1>
-                </div>
-              </a>
-
-              <div>
-                <div className="hidden md:block">
-                  <div className="ml-10 flex items-baseline space-x-4">
-                    <a
-                      href="/"
-                      className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-                    >
-                      <AiOutlineHome className="mx-1 text-lg" /> Home
-                    </a>
-
-                    <a
-                      href="/events"
-                      className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-                    >
-                      <BsCalendarEvent className="mx-1 text-lg" /> Events
-                    </a>
-
-                    <a
-                      href="/teams"
-                      className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-                    >
-                      <RiTeamLine className="mx-1 text-lg" /> Teams
-                    </a>
-
-                    <a
-                      href="/resources"
-                      className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-                    >
-                      <RiBook2Line className="mx-1 text-lg" /> Resources
-                    </a>
-
-                    <a
-                      href="/cybersleuthsxisoeh"
-                      className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-                    >
-                      <FaHandshake className="mx-1 text-lg" /> Cyber Sleuths X ISOEH
-                    </a>
-                  </div>
-                </div>
+      <nav className={navbar ? navscrolled : navtop}>
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="relative flex items-center justify-between h-16">
+            <div className="flex-shrink-0">
+              <Link to="/">
+                <img
+                  className="block lg:hidden h-8 w-auto"
+                  src="/img/logo.png"
+                  alt="Workflow"
+                />
+                <img
+                  className="hidden lg:block h-8 w-auto"
+                  src="/img/logo.png"
+                  alt="Workflow"
+                />
+              </Link>
+            </div>
+            <div className="hidden sm:block sm:ml-auto">
+              <div className="flex space-x-4">
+                <Link
+                  to="/"
+                  className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
+                >
+                  <AiOutlineHome className="mx-1 text-lg" /> Home
+                </Link>
+                <Link
+                  to="/events"
+                  className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
+                >
+                  <BsCalendarEvent className="mx-1 text-lg" /> Events
+                </Link>
+                <Link
+                  to="/teams"
+                  className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
+                >
+                  <RiTeamLine className="mx-1 text-lg" /> Teams
+                </Link>
+                <Link
+                  to="/resources"
+                  className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
+                >
+                  <RiBook2Line className="mx-1 text-lg" /> Resources
+                </Link>
+                <Link
+                  to="/cybersleuthsxisoeh"
+                  className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
+                >
+                  <FaHandshake className="mx-1 text-lg" /> Cyber Sleuths X ISOEH
+                </Link>
+                <Link
+                  to="/faq"
+                  className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
+                >
+                  FAQ
+                </Link>
               </div>
             </div>
-            <div className="-mr-2 flex md:hidden">
+            <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="focus:outline-none inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-600 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
                 <span className="sr-only">Open main menu</span>
-                {!isOpen ? (
-                  <svg
-                    className="block h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    className="block h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                )}
+                <svg
+                  className="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+                <svg
+                  className="hidden h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -135,45 +134,48 @@ export default function NavBar() {
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          {/* Mobile menu */}
-          <div className="md:hidden" id="mobile-menu">
-            <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-              <a
-                href="/"
-                className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-              >
-                <AiOutlineHome className="mx-1 text-lg" /> Home
-              </a>
-
-              <a
-                href="/events"
-                className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-              >
-                <BsCalendarEvent className="mx-1 text-lg" /> Events
-              </a>
-
-              <a
-                href="/teams"
-                className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-              >
-                <RiTeamLine className="mx-1 text-lg" /> Teams
-              </a>
-
-              <a
-                href="/resources"
-                className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-              >
-                <RiBook2Line className="mx-1 text-lg" /> Resources
-              </a>
-
-              <a
-                href="/cybersleuthsxisoeh"
-                className="flex rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-600"
-              >
-                <FaHandshake className="mx-1 text-lg" /> Cyber Sleuths X ISOEH
-              </a>
+          {(ref) => (
+            <div className="sm:hidden" id="mobile-menu">
+              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1">
+                <Link
+                  to="/"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Home
+                </Link>
+                <Link
+                  to="/events"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Events
+                </Link>
+                <Link
+                  to="/teams"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Teams
+                </Link>
+                <Link
+                  to="/resources"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Resources
+                </Link>
+                <Link
+                  to="/cybersleuthsxisoeh"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Cyber Sleuths X ISOEH
+                </Link>
+                <Link
+                  to="/faq"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  FAQ
+                </Link>
+              </div>
             </div>
-          </div>
+          )}
         </Transition>
       </nav>
     </div>
