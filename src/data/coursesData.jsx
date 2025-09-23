@@ -1,16 +1,16 @@
 export default [
     {
-        imageUrl: "",  
-        imageAlt: "Course 12222",
-        title: "Course 15353434 Title",
-        description: "This course covers the basics of cybersecurity.",
+        imageUrl: "public/PDF/logo.jpg",  
+        imageAlt: "Course 1",
+        title: "Ethical Hacking",
+        description: "This course covers the basics of ethical Hacking.",
         link: "/course1"  
     },
     {
-        imageUrl: "/img/course2.jpg", 
+        imageUrl: "public/PDF/logo.jpg", 
         imageAlt: "Course 2",
-        title: "Course 2 Title",
-        description: "This course focuses on advanced ethical hacking techniques.",
+        title: "Industrial Training on Hacking Hacking",
+        description: "Industry oriented",
         link: "/course2"  
     },
 ];

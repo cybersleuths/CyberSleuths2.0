@@ -45,13 +45,7 @@ export default function Teams1({ teams2 }) {
           >
             <BsLinkedin />
           </a>
-          <a
-            href={teams2.twitter}
-            className="hover:text-red-600"
-            target="_blank"
-          >
-            <BsTwitter />
-          </a>
+          
           <a
             href={teams2.github}
             className="hover:text-red-600"

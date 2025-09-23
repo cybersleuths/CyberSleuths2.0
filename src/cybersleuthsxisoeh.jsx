@@ -57,7 +57,7 @@ export default function CyberSleuthsXISOEH() {
             </div>
           </div>
           
-          {/* Image Gallery Section */}
+          {/* Image Gallery Section */}{/*
           <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 relative">
             {images.slice(0, visibleImagesCount).map((src, index) => (
               <img
@@ -75,7 +75,7 @@ export default function CyberSleuthsXISOEH() {
                 View More
               </button>
             )}
-          </div>
+          </div>*/}
         </div>
 
         {/* Courses Section */}

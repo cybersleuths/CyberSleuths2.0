@@ -27,10 +27,11 @@ export default function Teams1({ teams1 }) {
           </p>
         </div>
         <div className="flex justify-center gap-5 pt-5 text-xl text-gray-700   ">
-        <a href={teams1.instagram} className="hover:text-red-600" target="_blank"><BsInstagram /></a>
+        
             <a href={teams1.linkedin} className="hover:text-red-600" target="_blank"><BsLinkedin /></a>
-            <a href={teams1.twitter} className="hover:text-red-600" target="_blank"><BsTwitter  /></a>
-            <a href={teams1.github} className="hover:text-red-600" target="_blank"> <BsGithub  /></a>    
+            <a href={teams1.github} className="hover:text-red-600" target="_blank"> <BsGithub  /></a>
+            <a href={teams1.instagram} className="hover:text-red-600" target="_blank"><BsInstagram /></a>
+                
         </div>
       </div>
     </div>
