@@ -32,13 +32,7 @@ export default function GDCard({ gd }) {
           </p>
         </div>
         <div className="flex justify-center gap-5 py-5 text-xl text-gray-700   ">
-          <a
-            href={gd.instagram}
-            className="hover:text-red-600"
-            target="_blank"
-          >
-            <BsInstagram />
-          </a>
+          
           <a
             href={gd.linkedin}
             className="hover:text-red-600"
@@ -46,16 +40,18 @@ export default function GDCard({ gd }) {
           >
             <BsLinkedin />
           </a>
-          <a
-            href={gd.twitter}
-            className="hover:text-red-600"
-            target="_blank"
-          >
-            <BsTwitter />
-          </a>
+        
           <a href={gd.github} className="hover:text-red-600" target="_blank">
             {" "}
             <BsGithub />
+          </a>
+
+          <a
+            href={gd.instagram}
+            className="hover:text-red-600"
+            target="_blank"
+          >
+            <BsInstagram />
           </a>
         </div>
       </div>

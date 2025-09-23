@@ -21,6 +21,7 @@ export default function Home() {
     <div className="space-y-24 bg-gradient-to-br from-red-700 via-black to-red-900 min-h-screen">   
       <Landing />
       <Youtubevideo />
+      
       {/* Event Cards */}
       <section className="mx-auto mt-12 mb-12 max-w-7xl overflow-hidden px-4 sm:px-6 lg:px-4">
         <article className="col-auto mb-10">
@@ -29,12 +30,12 @@ export default function Home() {
             data-aos-duration="1000"
             id="codeaajkal"
             className="mb-14 text-center"
-          >
+          >{/* Banner 
             <h1 className="title-font mb-4 text-center text-2xl font-medium text-gray-100 sm:text-3xl">
               Upcoming Event & Workshops
             </h1>
           </div>
-          {/* Banner */}
+          
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -71,7 +72,7 @@ export default function Home() {
                   Register Here
                 </a>
               </div>
-            </div>
+            </div>*/}
           </div>
           <div
             data-aos="fade-up"

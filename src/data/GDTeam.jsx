@@ -1,40 +1,41 @@
 export default [
   {
-    imageUrl: "./img/corememb/Rakesh.jpg",
-    name: "Rakesh Raushan ",
-    designation: "Coordinator",
-    linkedin: "https://www.linkedin.com/in/rakeshraushan403",
-    twitter: "https://x.com/Rakesh96081433?t=QE5vrW4XP6NmyNZJur6XiA&s=09",
-    github: "https://github.com/Rakesh9608",
-    facebook: "https://www.facebook.com/BhumiharG.2",
-    instagram: "https://www.instagram.com/bhumihar_g_",
-    
+    imageUrl: "./img/corememb/Diksha.jpg",
+    name: "Diksha Mishra",
+    designation: "Event-Cordinator",
+    instagram: "https://www.instagram.com/diksha_mishra_128?igsh=MTh1NTBtZWNoMjhnNg==",
+    linkedin: "https://www.linkedin.com/in/diksha-mishra-24b375289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "",
+    github: "https://github.com/Diksha-2005"
   },
   {
-    imageUrl: "./img/corememb/Shaumya.png",
-    name: "Shaumya Raj",
-    designation: "Coordinator",
+    imageUrl: "./img/corememb/Satyam.jpg",
+    name: "Satyam Shresth",
+    designation: "PR Management",
+    instagram: "https://www.instagram.com/satyamsinha197?igsh=czBieTAybWxjbHM3",
+    linkedin: "https://www.linkedin.com/in/satyam-shresth-499026295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "",
+    github: ""
+  },
+
+  {
+    imageUrl: "./img/corememb/Ruchi.jpg",
+    name: "Ruchi Kumari",
+    designation: "PR Management",
     instagram: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/ruchi-kumari-5b7150306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     twitter: "",
     github: ""
   },
+
   {
-    imageUrl: "./img/corememb/Piyush.jpg",
-    name: "Piyush Raj Agarwal ",
-    designation: "Coordinator",
-    instagram: "https://www.instagram.com/piyush_agarwal.x/profilecard/?igsh=NnZxeWJxdDY3MGVn",
-    linkedin: "https://www.linkedin.com/in/piyush-agarwal-681121255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    imageUrl: "./img/corememb/Mausam.jpg",
+    name: "Mausam Jha",
+    designation: "PR Management",
+    instagram: "",
+    linkedin: "https://www.linkedin.com/in/mausam-jha-011a322b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     twitter: "",
-    github: "http://github.com/piyushagarwal777"
-  },
-  {
-    imageUrl: "./img/corememb/prince.jpg",
-    name: "Kaushal kumar",
-    designation: "Coordinator",
-    instagram: "https://www.instagram.com/ydv.kaushal.04?igsh=MXV4enJzN3ZxaDZvMw==",
-    linkedin: "",
-    twitter: "https://x.com/Kaushalyadav_04?s=09",
     github: ""
-  }
+  },
+
 ];

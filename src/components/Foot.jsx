@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Foot() {
   return (
-    <footer className="relative pt-8 pb-6 flex justify-center border-t-2 bg-gradient-to-b from-red-900 via-black to-red-900">  
+    <footer
+      className="relative pt-8 pb-6 flex justify-center bg-gradient-to-b from-red-900 via-black to-red-900"
+      style={{ borderTop: "none" }}
+    >
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-left lg:text-left max-w-7xl mx-auto">
           <div className="w-full lg:w-6/12 px-4">
@@ -16,15 +19,10 @@ export default function Foot() {
             </div>
 
             <div className="mt-6 lg:mb-0 mb-6">
-              {/*<button className="bg-red-600 text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transform transition hover:-translate-y-0.5" type="button">
-                <a href="https://www.facebook.com/codechefCyber Sleuthschapter" className="fab fa-facebook-square" target='_blank' rel="noopener noreferrer"></a>
-              </button>*/}
+              {/* Social buttons */}
               <button className="bg-red-600 text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transform transition hover:-translate-y-0.5" type="button">
                 <a href="https://www.instagram.com/cyber.sleuths_official/" className="fab fa-instagram" target='_blank' rel="noopener noreferrer"></a>
               </button>
-              {/*<button className="bg-red-600 text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transform transition hover:-translate-y-0.5" type="button">
-                <a href="https://twitter.com/CodeChefCyber Sleuths" className="fab fa-twitter" target='_blank' rel="noopener noreferrer"></a>
-              </button>*/}
               <button className="bg-red-600 text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 transform transition hover:-translate-y-0.5" type="button">
                 <a href="https://www.linkedin.com/company/cyber-sleuths/?viewAsMember=true" className="fab fa-linkedin" target='_blank' rel="noopener noreferrer"></a>
               </button>
@@ -59,14 +57,15 @@ export default function Foot() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-400" />
+        {/* The horizontal line below is commented out/removed */}
+        {/* <hr className="my-6 border-gray-400" /> */}
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-white font-semibold py-1">Copyright © Cyber Sleuths <span id="get-current-year">2023</span></div>
           </div>
           <div className="text-sm text-white font-semibold py-1">
                Made with ❤️ | Cyber Sleuths Team
-            </div>
+          </div>
         </div>
       </div>
     </footer>
